@@ -1,0 +1,73 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy Lab | Contact</title>
+    <link rel="stylesheet" href="CSS/app.css">
+<link rel="icon" href="Images/tube.png">
+    </head>
+    <body>
+    <section class="banner">
+        <header>
+        <a href="index.html" class="logo">Dummy Lab</a>
+        <div class="toggle" onclick="toggle();"></div>
+        </header>
+        <div class="content">
+        <div class="contentBx">
+            <h2>Contact</h2><br>
+            <p>Tanish - Tkbhms84@gmail.com<br>Manan - manansingh736@gmail.com<br>Sumanyu - santarudeep@gmail.com</p><br>
+<p>Please fill this form if you have any suggestions or feedback for us:</p><br><br>      
+<form>
+<p>Name: </p><input type="text" id="name"><br><br>
+<p>Email Id: </p><input type="email" id="e"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mobile No:</p>
+<input type="number" id="n"><br><br>
+<p>Suggestions and Feedback: </p><textarea cols="60" rows="5" id="f"></textarea>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p id="fill" style="display:none;">Please fill all the fields.</p>
+<a href="javascript:s()" style="display:"inline" id="s">Submit</a>
+</form>
+ </div>    
+    <div class="imgBx">
+            <img src="Images/tube.png">
+            </div>
+        </div>
+        <ul class="sci">
+        <li><a href="https://www.facebook.com/indraprasthaworld/"><img src="Images/facebook.png"></a></li>
+            <li><a href="#"><img src="Images/instagram.png"></a></li>
+        <li><a href="#"><img src="Images/twitter.png"></a></li>
+        </ul>
+          
+      
+                <ul class="navigation">
+        <ul>
+        <li><a href="index.html" data-text="Home">Home</a></li>
+<li><a href="app.html" data-text="App">App</a></li>
+            <li><a href="donate.html" data-text="Donate">Donate</a></li>
+            <li><a href="team.html" data-text="Team">Team</a></li>
+            <li><a href="contact.html" data-text="Contact">Contact</a></li>
+        </ul>
+        </ul>
+        
+        </section>
+    
+        <script type="text/javascript">
+        function toggle(){
+            const toggle = document.querySelector('.toggle');
+             const banner = document.querySelector('.banner');
+            toggle.classList.toggle('active')
+            banner.classList.toggle('active')
+        }
+function s(){
+if (document.getElementById("name").value == "" || document.getElementById("e").value == "" || document.getElementById("n").value == "" || document.getElementById("f").value == ""){
+document.getElementById("fill").style.display = "inline";
+document.getElementById("s").style.display = "none";
+setTimeout(function(){
+document.getElementById("fill").style.display = "none";
+document.getElementById("s").style.display = "inline";}, 1500);
+}
+else{
+localStorage.setItem("who2", document.getElementById("name").value);
+window.open("thankss.html", "_self");
+}
+}
+        </script>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy Lab | Team</title>
+    <link rel="stylesheet" href="CSS/app.css">
+<link rel="icon" href="Images/tube.png">
+    </head>
+    <body>
+    <section class="banner">
+        <header>
+        <a href="index.html" class="logo">Dummy Lab</a>
+        <div class="toggle" onclick="toggle();"></div>
+        </header>
+        <div class="content">
+        <div class="contentBx">
+            <h2>Team</h2><br>
+            <p>Tanish Kapoor - Class 11<br>Manan Singh - Class 9<br>Sumanyu Aggarwal - Class 8<br>Indraprastha World School</p>
+            </div>    
+    <div class="imgBx">
+            <img src="Images/tube.png">
+            </div>
+        </div>
+        <ul class="sci">
+        <li><a href="https://www.facebook.com/indraprasthaworld/"><img src="Images/facebook.png"></a></li>
+            <li><a href="#"><img src="Images/instagram.png"></a></li>
+        <li><a href="#"><img src="Images/twitter.png"></a></li>
+        </ul>
+          
+      
+                <ul class="navigation">
+        <ul>
+        <li><a href="index.html" data-text="Home">Home</a></li>
+<li><a href="app.html" data-text="App">App</a></li>
+            <li><a href="donate.html" data-text="Donate">Donate</a></li>
+            <li><a href="team.html" data-text="Team">Team</a></li>
+            <li><a href="contact.html" data-text="Contact">Contact</a></li>
+        </ul>
+        </ul>
+        
+        </section>
+    
+        <script type="text/javascript">
+        function toggle(){
+            const toggle = document.querySelector('.toggle');
+             const banner = document.querySelector('.banner');
+            toggle.classList.toggle('active')
+            banner.classList.toggle('active')
+        }
+        </script>
+    </body>
+</html>
